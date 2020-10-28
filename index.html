@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description"
+    content="This is an example of a meta description. This will often show up in search results.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlixStock</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body>
+  <div class="clip-bg"></div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="my-row h-100">
+        <div class="my-col-5 text-white">
+          <div class="d-flex">
+            <div class="inner-content">
+              <img src="assets/images/dress.png" style="width: 100%;height: 560px;">
+            </div>
+          </div>
+        </div>
+        <div class="my-col-5 bg-white corner">
+          <label>Select an edit option</label>
+          <div class="d-flex">
+            <div class="option opt1" id="save" value="5">Clipping → $5</div>
+            <div class='cross1 cross' value='5' style="display: none;">&times;</div>
+          </div>
+          <div class="d-flex">
+            <div class="option opt2" id="save" value="0.25">Color Correction → $0.25</div>
+            <div class='cross2 cross' value='5' style="display: none;">&times;</div>
+          </div>
+          <div>Background Editing :</div>
+          <div class="d-flex">
+            <div class="option opt3" id="save" value="0.34">Remove Background → $0.34</div>
+            <div class='cross3 cross' value='5' style="display: none;">&times;</div>
+          </div>
+          <div class="d-flex">
+            <div class="option opt4" id="save" value="0.78">Change Background Color → $0.78</div>
+            <div class='cross4 cross' style="display: none;">&times;</div>
+          </div>
+
+          <div>Shadows :</div>
+          <div class="d-flex">
+            <div class="option opt5" id="save" value="1.24">Remove Shadows → $1.24</div>
+            <div class='cross5 cross' style="display: none;">&times;</div>
+          </div>
+          <div class="d-flex">
+            <div class="option opt6" id="save" value="1">Smoothen Shadows → $1</div>
+            <div class='cross6 cross' style="display: none;">&times;</div>
+          </div>
+          <button class="button" id="myBtn">View Details</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <button id="snackbarBtn" style="display: none;"></button>
+
+  <div id="snackbar">Added Successully</div>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content ani">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Selected option</h2>
+      </div>
+      <hr>
+      <div class="modal-body" id="appchild">
+
+      </div>
+      <hr>
+
+      <div class="modal-footer flex-container">
+        <h3 style="flex-grow: 8;width: unset;">Total Price : <span class="total"></span></h3>
+        <button class="button" id="modlBtn" style="flex-grow: 1;width: unset;">Submit</button>
+        <button class="button" id="closebtn" style="flex-grow: 1;width: unset;background-color: #c10b0b;">Edit
+          option</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
